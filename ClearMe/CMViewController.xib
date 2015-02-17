@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CMViewController">
+            <connections>
+                <outlet property="textField" destination="kTc-2h-stt" id="xmK-YL-h4w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTc-2h-stt">
+                    <rect key="frame" x="8" y="139" width="351" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="yes" returnKeyType="yahoo"/>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="8" y="257" width="384" height="30"/>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="A9b-bM-gBI"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-WU-SH3">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="109" id="fGo-Xf-Vrm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="67"/>
+                    <state key="normal" title="Clear">
+                        <color key="titleShadowColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fGo-Xf-Vrm"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="fGo-Xf-Vrm"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="clearButtonTapped:" destination="-1" eventType="touchUpInside" id="5Kc-UV-K27"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hbw-WU-SH3" firstAttribute="centerX" secondItem="kTc-2h-stt" secondAttribute="centerX" id="V7y-sG-Tzx"/>
+                <constraint firstItem="kTc-2h-stt" firstAttribute="top" secondItem="Hbw-WU-SH3" secondAttribute="bottom" constant="29" id="aSm-Or-BY3">
+                    <variation key="heightClass=regular-widthClass=compact" constant="38"/>
+                </constraint>
+                <constraint firstItem="Hbw-WU-SH3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kBT-oO-dPA"/>
+                <constraint firstItem="Hbw-WU-SH3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="sPD-B3-Dsq">
+                    <variation key="heightClass=regular-widthClass=compact" constant="110"/>
+                </constraint>
+                <constraint firstItem="Hbw-WU-SH3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="sU7-Cw-SeH"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Hbw-WU-SH3"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="V7y-sG-Tzx"/>
+                    <exclude reference="kBT-oO-dPA"/>
+                    <exclude reference="sPD-B3-Dsq"/>
+                    <exclude reference="sU7-Cw-SeH"/>
+                    <exclude reference="aSm-Or-BY3"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Hbw-WU-SH3"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="V7y-sG-Tzx"/>
+                    <include reference="kBT-oO-dPA"/>
+                    <include reference="sPD-B3-Dsq"/>
+                    <include reference="sU7-Cw-SeH"/>
+                    <include reference="aSm-Or-BY3"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
